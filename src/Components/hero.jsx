@@ -28,7 +28,7 @@ const Hero = () => {
       </div>
 
       {/* Right Side Image */}
-      <div className="md:w-1/2 flex justify-center items-center opacity-0 translate-y-10 animate-fadeIn">
+      <div className="pt-16  md:w-1/2 flex justify-center items-center opacity-0 translate-y-10 animate-fadeIn">
       <img src={profile} alt="" />
        </div>
     </div>

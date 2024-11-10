@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
@@ -18,7 +18,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://portfolio-backend-drhl.onrender.com/api/messages', formData);
+      await axios.post(`https://portfolio-backend-drhl.onrender.com/api/messages`, formData);
       toast.success('Message sent successfully', {
         position: "top-right",
         autoClose: 3000,
@@ -40,7 +40,7 @@ const Contact = () => {
         progress: undefined,
       });
       console.error('Error sending message:', error);
-    }
+     }
   };
 
   return (

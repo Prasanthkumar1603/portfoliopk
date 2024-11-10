@@ -58,22 +58,22 @@ function App() {
           <section id="hero">
             <Hero />
           </section>
-          <section id="about">
+          <section id="about" className="pt-6">
             <About />
           </section>
-          <section id="skills">
+          <section id="skills" className="pt-6">
             <Skills />
           </section>
-          <section id="projects">
+          <section id="projects" className="pt-6">
             <Projects />
           </section>
-          <section id="experience">
+          <section id="experience" className="pt-6">
             <Experience />
           </section>
-          <section id="certificate">
+          <section id="certificate"className="pt-6">
             <Certification/>
           </section>
-          <section id="contact">
+          <section id="contact"className="pt-6">
             <Contact />
           </section>
         </main>

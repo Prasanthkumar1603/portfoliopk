@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Projects = () => {
+  // const apiUrl = process.env.APP_API_URL
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get('https://portfolio-backend-drhl.onrender.com/api/projects');
+        const response = await axios.get(`https://portfolio-backend-drhl.onrender.com/api/projects`);
         setProjects(response.data);
       } catch (error) {
         console.error('Error fetching projects:', error);

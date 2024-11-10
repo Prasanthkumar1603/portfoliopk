@@ -9,7 +9,7 @@ const Experience = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get('https://portfolio-backend-drhl.onrender.com/api/experience');
+        const response = await axios.get(`https://portfolio-backend-drhl.onrender.com/api/experience`);
         setExperiences(response.data);
       } catch (error) {
         console.error('Error fetching experiences:', error);
