@@ -46,6 +46,21 @@ const Certifications = () => {
             dateIssued: 'August 2023',
             description: 'Completed a course on game development using Pygame, learning about game logic, graphics, and animation.',
         },
+        {
+            _id: '7',
+            title: 'One Day National Level Workshop On Problem Solving and Programming Techniques',
+            issuer: 'Ananda College Devakottai',
+            dateIssued: 'March 2022',
+            description: 'One day national level workshop on Problem Solving and Programming Techniques Organized by  Department of Computer Studies ANANDA COLLEGE , DEVAKOTTAI , 30th March 2022.'
+        },
+        {
+            _id: '8',
+            title: 'One Day State Level  Seminar On Cloud Computing and Network Security',
+            issuer: 'Sree Sevugan Annamalai College Devakottai',
+            dateIssued: 'March 2020',
+            description: 'One day state seminar on cloud computing and Network Security organized by the the Department of Computer Science , Sree Sevugan Annamalai College, Devakottai held on 04 March 2020.'
+        }
+
     ];
 
     return (
