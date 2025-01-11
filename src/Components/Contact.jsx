@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+  const apiUrl = process.env.REACT_APP_API_URL;
    const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`https://portfolio-backend-drhl.onrender.com/api/messages`, formData);
+      await axios.post(`${apiUrl}/api/messages`, formData);
       toast.success('Message sent successfully', {
         position: "top-right",
         autoClose: 3000,

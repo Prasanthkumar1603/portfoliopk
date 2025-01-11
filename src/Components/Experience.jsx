@@ -3,13 +3,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Experience = () => {
+  const apiUrl = process.env.REACT_APP_API_URL;
   const [experiences, setExperiences] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get(`https://portfolio-backend-drhl.onrender.com/api/experience`);
+        const response = await axios.get(`${apiUrl}/api/experience`);
         setExperiences(response.data);
       } catch (error) {
         console.error('Error fetching experiences:', error);

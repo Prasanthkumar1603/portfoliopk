@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const Projects = () => {
-  // const apiUrl = process.env.APP_API_URL
+  const apiUrl = process.env.REACT_APP_API_URL;
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const response = await axios.get(`https://portfolio-backend-drhl.onrender.com/api/projects`);
+        const response = await axios.get(`${apiUrl}/api/projects`);
         setProjects(response.data);
       } catch (error) {
         console.error('Error fetching projects:', error);
@@ -18,7 +18,7 @@ const Projects = () => {
       }
     };
     fetchProjects();
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="bg-gray-100 py-10">
