@@ -64,7 +64,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Your Email"
+            placeholder="Your WhatsApp No Or Email Id"
             className="w-full p-3 mb-4 border border-gray-300 rounded"
             required
           />

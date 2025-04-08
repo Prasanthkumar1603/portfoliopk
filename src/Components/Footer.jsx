@@ -45,7 +45,7 @@ const Footer = () => {
         {/* Contact Info */}
         <p className="footer__contact mb-4">
           <span>Email: <a href="mailto:prasanthkumar.pk.official@gmail.com" className="text-gray-300 hover:text-gray-400">prasanthkumar.pk.official@gmail.com</a></span><br />
-          <span>Mobile: <a href="tel:+919047842657" className="text-gray-300 hover:text-gray-400">9047842657</a></span>
+          <span>Mobile: <a href="tel:+917871922657" className="text-gray-300 hover:text-gray-400">7871922657</a></span>
         </p>
 
         {/* Copyright */}
