@@ -43,7 +43,7 @@ import profile from '../assets/profile.png';
 
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-purple-500 text-white min-h-screen flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 md:py-0">
+    <div className="bg-animated-gradient text-white min-h-screen flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 md:py-0">
 
       {/* Left Side Content */}
       <div className="md:w-1/2 text-center md:text-left flex flex-col justify-center items-center md:items-start">

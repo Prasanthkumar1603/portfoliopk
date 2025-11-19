@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-6 mt-10">
+    <footer className="bg-animated-gradient">
       <div className="max-w-4xl mx-auto text-center">
-        <p className="footer__title text-xl font-bold mb-4">Prasanthkumar</p>
+        <p className="footer__title text-xl font-bold mb-4 text-yellow-300">Prasanthkumar</p>
 
         {/* Social Links */}
         <div className="footer__social mb-4 flex justify-center space-x-4">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <p className="footer__contact mb-4">
+        <p className="footer__contact mb-4 text-yellow-300">
           <span>Email: <a href="mailto:prasanthkumar.pk.official@gmail.com" className="text-gray-300 hover:text-gray-400">prasanthkumar.pk.official@gmail.com</a></span><br />
           <span>Mobile: <a href="tel:+917871922657" className="text-gray-300 hover:text-gray-400">7871922657</a></span>
         </p>

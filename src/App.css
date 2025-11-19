@@ -15,3 +15,15 @@
 }
 
  
+/* 🔹 Animated Gradient Background */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(-45deg, #3b82f6, #9333ea, #14b8a6, #f43f5e);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
