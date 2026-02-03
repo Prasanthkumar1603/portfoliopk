@@ -75,21 +75,21 @@ const Contact = () => {
           />
 
           {/* Country Code + WhatsApp */}
-          <div className="flex gap-3 mb-4">
+          <div className="flex gap-2 mb-4">
 
             <select
               name="countryCode"
               value={formData.countryCode}
               onChange={handleChange}
-              className="p-3 border border-gray-300 rounded w-32 bg-white"
+              className="p-3 border border-gray-300 rounded w-20 bg-white"
             >
-              <option value="+91">India (+91)</option>
-              <option value="+1">USA (+1)</option>
-              <option value="+44">UK (+44)</option>
-              <option value="+61">Australia (+61)</option>
-              <option value="+971">UAE (+971)</option>
-              <option value="+94">Sri Lanka (+94)</option>
-              <option value="+880">Bangladesh (+880)</option>
+              <option value="+91">+91 (India)</option>
+              <option value="+1">+1 (USA)</option>
+              <option value="+44">+44 (UK)</option>
+              <option value="+61">+61 (Australia)</option>
+              <option value="+971">+971 (UAE)</option>
+              <option value="+94">+94 (Sri Lanka)</option>
+              <option value="+880">+880 (Bangladesh)</option>
             </select>
 
             <input

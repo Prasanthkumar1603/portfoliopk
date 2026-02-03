@@ -19,7 +19,7 @@ const Experience = () => {
       }
     };
     fetchExperiences();
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div className="bg-gray-100 py-10">
